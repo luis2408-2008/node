@@ -66,5 +66,7 @@ app.use((req, res, next) => {
     reusePort: true,
   }, () => {
     log(`serving on port ${port}`);
+    console.log(`🚀 La aplicación está ejecutándose en: http://localhost:${port}`);
+    console.log(`✅ Abre tu navegador y navega a la URL para ver la calculadora de IMC!`);
   });
 })();
