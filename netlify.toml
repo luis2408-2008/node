@@ -1,0 +1,12 @@
+# Configuración para desplegar en Netlify
+[build]
+  # Comando para construir el frontend
+  command = "npm run build"
+  # Directorio donde se generan los archivos estáticos después de la construcción
+  publish = "dist/client"
+
+# Redirecciones para SPA (Single Page Application)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
